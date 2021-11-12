@@ -1,8 +1,8 @@
-## prototype-implementation
+# prototype-implementation
 
-# Um repositório para armazenar a página principal do nosso projeto no Figma.
+## Um repositório para armazenar a página principal do nosso projeto no Figma.
 
-# Autores:
+## Autores:
 
 Caique Corcovia<br>
 Luiz Gustavo Caldas<br>
