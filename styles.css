@@ -125,9 +125,16 @@ main {
 
     #products {}
 
-    footer {
-        background: #0C3D41;
-        color: #ECD061;
-        margin-bottom: 0;
-        display: flex;
+footer {
+    background: #0C3D41;
+    color: #fff;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font: 400 15px;
+}
+
+    footer ul {
+        list-style: none;
+        font: 300 13px Quicksand;
     }
