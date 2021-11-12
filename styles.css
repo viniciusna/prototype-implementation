@@ -5,14 +5,44 @@ body {
     margin: 0;
 }
 
-header {
+header{
     background: #0C3D41;
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
 }
+    .header-block{
+        width: 1200px;
+        height: 176px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .header-block-left{
+            width: 475px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+            #logo{
+                width: 365px;
+                display: flex;
+                justify-content: space-between;
+            }
+                #logo div span{
+                    font-weight: bold;
+                    font-size: 40px;
+                    font-family: 'Quicksand';
+                    color: #ECD061;
+                }
+        .header-block-right{
+            width: 260px;
+            display: flex;
+            justify-content: space-between;
+        }
 
-    #logo {}
+    
 
     #icons {}
 
@@ -56,7 +86,6 @@ main {
     background: #F1EEDE;
     border-radius: 15px;
     width: 1136px;
-    height: 1000px;
     margin: 20px 0 0 100px;
 }
 
