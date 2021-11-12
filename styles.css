@@ -46,15 +46,35 @@ main {
     background: #F1EEDE;
     border-radius: 15px;
     width: 1136px;
+    height: 1000px;
     margin: 20px 0 0 100px;
 }
 
     #filters {
         background: #0C3D41;
-        border-radius: 15px;
+        border-top-left-radius: 15px;
         width: 200px;
         color: #ECD061;
         font: bold 18px Quicksand;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    #aside-content {
+        position:sticky;
+        top: 30px;
+    }
+    #aside-content a {
+        text-decoration: none;        
+        color: #ECD061;
+    }
+    #aside-content div{
+        height: 3px;
+        width: 100%;
+        color: #ECD061;
+    }
+    #aside-content img {
+        width: 100%;
+        height: auto;
     }
 
     #products {}
