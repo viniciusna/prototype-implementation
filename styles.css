@@ -54,7 +54,47 @@ main {
         border-radius: 15px;
         width: 200px;
         color: #ECD061;
-        font: bold 18px Quicksand;
+        font: bold 18px Nunito;
     }
 
-    #products {}
+    #products {
+        width: 936px;
+        height: auto;
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        font-family: 'Nunito';
+    }
+        .book-container{
+            width: 200px;
+            height: 380px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0px 30px 0px;
+        }
+            .book-container :first-child {
+                border-radius: 5px;
+            }
+            .book-info{
+                padding: 5px;
+                color: #0C3D41;
+            }
+                .book-title{
+                    font-size: large;
+                    font-weight: 700;
+                    text-align: justify;
+                }
+                .book-price{
+                    font-size: larger;
+                    font-weight: 900;
+                    text-align: right;
+                }
+        .overlay{
+            width: 200px;
+            position: absolute;
+        }
+            .book-detail{}
