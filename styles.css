@@ -1,60 +1,175 @@
-
+:root{
+    overflow-x: hidden;
+}
 
 body {
     background: #34B9A6;
     margin: 0;
 }
 
-header {
+header{
     background: #0C3D41;
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 20px;
 }
 
-    #logo {}
+    .header-block{
+        width: 1200px;
+        height: 125px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .header-block-left{
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+            #logo{
+                width: 275px;
+                display: flex;
+                height: 100%;
+                justify-content: space-between;
+            }
+                #logo div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    #logo div span{
+                        font-weight: bold;
+                        font-size: 30px;
+                        font-family: 'Quicksand';
+                        color: #ECD061;
+                    }
+        .header-block-right{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header * * :hover {
+            cursor: pointer;
+        }
+
+    
 
     #icons {}
 
 #search {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-content: center;
     height: 30px;
 }
 
     #search div {
-        width: 200px;
+        width: 460px;
+        padding: 15px;
         background: #fff;
-        border-radius: 15px;
+        border-radius: 25px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
     #input-search {
         border: none;
+        background: none;
+    }
+
+    #input-search::placeholder {
+        border: none;
+        background: none;
+        font-family: Quicksand;
+        color: black;
     }
 
         #input-search:focus {
             box-shadow: 0;
             outline: 0;
+            font-family: Quicksand;
         }
 
 main {
     display: flex;
-    background: #F1EEDE;
-    border-radius: 15px;
-    width: 1136px;
-    margin: 20px 0 0 100px;
+    justify-content: center;
+    padding-top: 20px;
+}
+    .main-box{
+        display: flex;
+        border-radius: 15px;
+        width: 1200px;
+        height: auto;
+        background: #F1EEDE;
+
+
+    }
+
+
+#filters {
+    background: #0C3D41;
+    border-top-left-radius: 15px;
+    width: 200px;
+    height: 100%;
+    color: #ECD061;
+    font: bold 18px Quicksand;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#aside-content {
+    padding-top: 20px;
+    position:sticky;
+    top:1px;
+}
+#aside-content h2:first-child{
+    padding: 0;
+    margin: 0;
+}
+#aside-content ul{
+    list-style-type:square;
+}
+#aside-content a {
+    text-decoration: none;        
+    color: #ECD061;
+}
+#aside-content a:hover {
+    text-decoration: underline;
+}
+#aside-separator {
+    height: 3px;
+    width: calc(100% - 30px);
+    background: #ECD061;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#aside-content img {
+    width: 100%;
+    height: auto;
+    margin-right: 15px;
+}
+#last {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: line-through;
+}
+#now{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
-    #filters {
-        background: #0C3D41;
-        border-radius: 15px;
-        width: 200px;
-        color: #ECD061;
-        font: bold 18px Nunito;
+
+
+    section#buttonsales svg {
+        position: fixed;
+        bottom: 30px;
+        left: 40px;
     }
 
     #products {
@@ -98,3 +213,21 @@ main {
             position: absolute;
         }
             .book-detail{}
+
+footer {
+    background: #0C3D41;
+    color: #fff;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    font: 400 15px;
+}
+
+    footer ul {
+        list-style: none;
+        font: 300 13px Quicksand;
+    }
+
+    .icons:hover {
+        cursor: pointer;
+    }
