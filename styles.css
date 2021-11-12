@@ -1,0 +1,60 @@
+
+
+body {
+    background: #34B9A6;
+    margin: 0;
+}
+
+header {
+    background: #0C3D41;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+    #logo {}
+
+    #icons {}
+
+#search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 30px;
+}
+
+    #search div {
+        width: 200px;
+        background: #fff;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #input-search {
+        border: none;
+    }
+
+        #input-search:focus {
+            box-shadow: 0;
+            outline: 0;
+        }
+
+main {
+    display: flex;
+    background: #F1EEDE;
+    border-radius: 15px;
+    width: 1136px;
+    margin: 20px 0 0 100px;
+}
+
+    #filters {
+        background: #0C3D41;
+        border-radius: 15px;
+        width: 200px;
+        color: #ECD061;
+        font: bold 18px Quicksand;
+    }
+
+    #products {}
