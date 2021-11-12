@@ -58,3 +58,10 @@ main {
     }
 
     #products {}
+
+footer {
+    background: #0C3D41;
+    color: #ECD061;
+    margin-bottom: 0;
+    display: flex;
+}
