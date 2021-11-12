@@ -4,8 +4,8 @@
 
 # Autores:
 
-Caique Corcovia
-Luiz Gustavo Caldas
-Pedro Lucas de Castro Silva
-Rodrigo L. França
-Vinicius Noronha
+Caique Corcovia<br>
+Luiz Gustavo Caldas<br>
+Pedro Lucas de Castro Silva<br>
+Rodrigo L. França<br>
+Vinicius Noronha<br>
