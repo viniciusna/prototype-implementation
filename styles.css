@@ -1,4 +1,6 @@
-
+:root{
+    overflow-x: hidden;
+}
 
 body {
     background: #34B9A6;
