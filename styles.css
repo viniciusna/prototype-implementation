@@ -24,21 +24,31 @@ header {
 }
 
     #search div {
-        width: 200px;
+        width: 30%;
+        padding: 1%;
         background: #fff;
-        border-radius: 15px;
+        border-radius: 25px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
     #input-search {
         border: none;
+        background: none;
+    }
+
+    #input-search::placeholder {
+        border: none;
+        background: none;
+        font-family: Quicksand;
+        color: black;
     }
 
         #input-search:focus {
             box-shadow: 0;
             outline: 0;
+            font-family: Quicksand;
         }
 
 main {
@@ -55,6 +65,13 @@ main {
         width: 200px;
         color: #ECD061;
         font: bold 18px Quicksand;
+    }
+
+
+    section#buttonsales svg {
+        position: fixed;
+        bottom: 30px;
+        left: 40px;
     }
 
     #products {}
