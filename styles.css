@@ -16,30 +16,36 @@ header{
 }
     .header-block{
         width: 1200px;
-        height: 176px;
+        height: 125px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
         .header-block-left{
-            width: 475px;
+            width: 350px;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
             #logo{
-                width: 365px;
+                width: 275px;
                 display: flex;
+                height: 100%;
                 justify-content: space-between;
             }
-                #logo div span{
-                    font-weight: bold;
-                    font-size: 40px;
-                    font-family: 'Quicksand';
-                    color: #ECD061;
+                #logo div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
+                    #logo div span{
+                        font-weight: bold;
+                        font-size: 30px;
+                        font-family: 'Quicksand';
+                        color: #ECD061;
+                    }
         .header-block-right{
-            width: 260px;
+            width: 200px;
             display: flex;
             justify-content: space-between;
         }
@@ -51,13 +57,13 @@ header{
 #search {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-content: center;
     height: 30px;
 }
 
     #search div {
-        width: 30%;
-        padding: 1%;
+        width: 460px;
+        padding: 15px;
         background: #fff;
         border-radius: 25px;
         display: flex;
@@ -85,25 +91,36 @@ header{
 
 main {
     display: flex;
-    background: #F1EEDE;
-    border-radius: 15px;
-    width: 1136px;
-    height: 3000px;
-    margin: 20px 0 0 100px;
+    justify-content: center;
+    padding-top: 20px;
 }
+    .main-box{
+        border-radius: 15px;
+        width: 1200px;
+        height: 3000px;
+        background: #F1EEDE;
+
+
+    }
 
 #filters {
     background: #0C3D41;
     border-top-left-radius: 15px;
     width: 200px;
+    height: 100%;
     color: #ECD061;
     font: bold 18px Quicksand;
     padding-left: 20px;
     padding-right: 20px;
 }
 #aside-content {
+    padding-top: 20px;
     position:sticky;
     top:1px;
+}
+#aside-content h2:first-child{
+    padding: 0;
+    margin: 0;
 }
 #aside-content ul{
     list-style-type:square;
