@@ -174,45 +174,65 @@ main {
 
     #products {
         width: 936px;
-        height: auto;
+        height: 1130px;
 
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        position: relative;
+        top: 40px;
 
         font-family: 'Nunito';
     }
         .book-container{
             width: 200px;
-            height: 380px;
+            height: 500px;
 
             display: flex;
             flex-direction: column;
-            align-items: center;
-            margin: 30px 0px 30px 0px;
+            align-items:baseline;
+            justify-content: flex-end;
         }
             .book-container :first-child {
                 border-radius: 5px;
+                width: inherit;
+                height: 280px;
             }
             .book-info{
-                padding: 5px;
+                padding: 15px;
                 color: #0C3D41;
+                height: 200px;
+
+                display: flex;
+                flex-direction: column;
             }
                 .book-title{
                     font-size: large;
                     font-weight: 700;
                     text-align: justify;
+                    margin: 0;
                 }
                 .book-price{
-                    font-size: larger;
+                    font-size: 26px;
                     font-weight: 900;
-                    text-align: right;
+                    text-align: center;
+                    margin: 0;
                 }
-        .overlay{
-            width: 200px;
-            position: absolute;
-        }
-            .book-detail{}
+                .book-container > .book-info > button {
+                    all:unset;
+                    background-color: #0C3D41;
+                    color: #ECD061;
+                    font-weight: 800;
+                    font-size: 20px;
+                    text-align: center;
+                    height: 100px;
+                    width: 190px;
+                    border-radius: 20px;
+                    
+                }
+                .book-container > .book-info > button:hover {
+                    cursor: pointer;
+                }
 
 footer {
     background: #0C3D41;
