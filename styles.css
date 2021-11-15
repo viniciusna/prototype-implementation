@@ -166,10 +166,34 @@ main {
 
 
 
-    section#buttonsales svg {
+    #buttonsales {
         position: fixed;
         bottom: 30px;
         left: 40px;
+    }
+
+    #sales {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        left: 40px;
+        width: 230px;
+        height: 100px;
+        background: #0C3D41;
+        border: 3px solid #ECD061;
+        box-sizing: border-box;
+        border-radius: 15px;
+    }
+
+    #sales p {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        align-self: center;
+        text-align: center;
+        color: #ECD061;
     }
 
     #products {
