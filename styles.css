@@ -199,7 +199,7 @@ main {
 
     #products {
         width: 936px;
-        height: 1130px;
+        height: 2500px;
 
         display: flex;
         justify-content: space-evenly;
