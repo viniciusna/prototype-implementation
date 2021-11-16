@@ -80,6 +80,7 @@ header{
     #input-search {
         border: none;
         background: none;
+        width: 430px;
     }
 
     #input-search::placeholder {
@@ -184,6 +185,10 @@ main {
         box-sizing: border-box;
         border-radius: 15px;
     }
+
+        #buttonsales,#sales:hover{
+            cursor: pointer;
+        }
 
     #sales p {
         font-family: Quicksand;
