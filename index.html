@@ -1,3 +1,14 @@
+<!-- Resumo => 
+        1ª Como boa prática, é sempre bom criar atributos mais descritivos, para que qualquer pessoa que venha analisar o código de Vocês
+        consiga entender sem muita dificuldade o que o valor deste atributo significa ou se refere.
+        
+        2ª A presença de tags svg sem necessidade tende a poluir o código.
+        
+        3ª O ideal é que as pastas images, icons e fonts sejam subpastas da pasta assets. dentro da pasta assets podem separar 
+        o que é icone(pasta icons) do que é imagem(pasta images) e fonte(pasta fonts).
+
+        Vocês encontrarão mais feedbacks ao longo dos arquivos html e css 
+     -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <style>
+    <style> /* Essas fontes poderiam estar importadas dentro da folha de estilos */
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
@@ -21,6 +32,9 @@
                     <path d="M43.9076 2.67502H50V36.3099H43.9076V2.67502ZM37.8153 16.6896H11.6608L24.738 4.65667L20.4307 0.693359L0 19.4925L20.4307 38.2916L24.738 34.3283L11.6608 22.2954H37.8153V16.6896Z" fill="#ECD061"/>
                 </svg>
                 <div id='logo'>
+                    <!--A tag <svg> é recomenda quando você pretende manipular seus paths
+                        Aqui vocês poderiam usar uma simples img mesmo e carregar esse svg
+                        no atributo src-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="125" height="100" viewBox="0 0 175 112" fill="none">
                         <path d="M174 56.187C174 71.1431 164.552 84.8225 148.985 94.8118C133.429 104.794 111.878 111.001 88.0221 111.001C64.1661 111.001 42.6153 104.794 27.0593 94.8118C11.4925 84.8225 2.04395 71.1431 2.04395 56.187C2.04395 41.2309 11.4925 27.5515 27.0593 17.5622C42.6153 7.57992 64.1661 1.37305 88.0221 1.37305C111.878 1.37305 133.429 7.57992 148.985 17.5622C164.552 27.5515 174 41.2309 174 56.187Z" fill="#0C3D41" stroke="#34B9A6" stroke-width="2"/>
                         <path d="M171.413 53.7674C171.413 67.9075 162.192 80.9393 146.798 90.513C131.426 100.073 110.096 106.035 86.4563 106.035C62.8168 106.035 41.4867 100.073 26.1146 90.513C10.7204 80.9393 1.5 67.9075 1.5 53.7674C1.5 39.6274 10.7204 26.5956 26.1146 17.0219C41.4867 7.46194 62.8168 1.5 86.4563 1.5C110.096 1.5 131.426 7.46194 146.798 17.0219C162.192 26.5956 171.413 39.6274 171.413 53.7674Z" fill="#34B9A6" stroke="#0C3D41" stroke-width="3"/>
@@ -31,8 +45,9 @@
                         <path d="M112.082 15.2559C114.862 15.2559 117.073 18.6047 117.769 24.5582C116.031 41.2957 104.611 60.4473 92.1022 73.0005C108.086 63.1671 125.112 58.1459 146.134 57.309C151.623 59.6502 153.703 61.598 154.821 66.7239L90.7123 74.0466L112.082 15.2559Z" fill="white"/>
                         <path d="M59.7871 15.2559C57.0073 15.2559 53.7526 19.3489 53.0568 24.5582C54.7942 41.2957 67.2578 60.4473 79.7669 73.0005C63.7831 63.1671 46.7569 58.1459 25.7347 57.309C20.2463 59.6502 18.1662 61.598 17.0479 66.7239L81.1568 74.0466L70.472 44.6512L59.7871 15.2559Z" fill="white"/>
                     </svg>
-                    <div>
-                        <span>mercado<br />
+                    <div><!-- Essa <div> é desnecessária, os estilos dela podem ser embutidos na tag <span> criada abaixo.
+                                Sempre que uma div é criada para manter um unico elemento, ela é desnecessária-->
+                        <span>mercado<br /><!-- Poderia ser subtituída pela tag <h1>-->
                             livro</span>
                     </div>
                 </div>
@@ -80,11 +95,84 @@
                     <h2>OFERTA</h2>
                     <a href="#"><img src="./images/1.png" alt="Título do Livro"></a>
                     <span id=last>De:R$32,00</span><br>
-                    <span id=now>Para: R$24,99!!</span> 
+                    <span id=now>Para: R$24,99!!</span> <!-- É uma boa prática criar atributos mais descritivos. -->
                 </div>
             </section>
             
             <section id='products'>
+                <div class='book-container'>                    
+                    <img src="images/book-1.png">                    
+                    <section class='book-info'> <!-- Poderia ser subtituída pela tag <div>-->
+                        <p class='book-title'>Warriors: The Broken Code #6: A Light in the Mist Hardcover</p>
+                        <p class='book-price'>R$14,51</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+
+                <div class='book-container'>
+                    <img src="images/book-2.png">
+                    <section class='book-info'> 
+                        <p class='book-title'>Fizban's Treasury of Dragons (Dungeon & Dragons Book)</p>
+                        <p class='book-price'>R$261,27</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+    
+                <div class='book-container'>
+                    <img src="images/book-3.png">
+                    <section class='book-info'> 
+                        <p class='book-title'>Will</p>
+                        <p class='book-price'>R$171,65</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+    
+                <div class='book-container'>
+                    <img src="images/book-4.png">
+                    <section class='book-info'> 
+                        <p class='book-title'>The Game Master's Book of Non-Player Characters 5th Edition RPG Adventures</p>
+                        <p class='book-price'>R$170,51</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+    
+                <div class='book-container'>
+                    <img src="images/book-5.png">
+                    <section class='book-info'> 
+                        <p class='book-title'>	
+                            The Official SAT Study Guide, 2020 Edition by The College Board</p>
+                        <p class='book-price'>R$224,81</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+    
+                <div class='book-container'>
+                    <img src="images/book-6.png">
+                    <section class='book-info'> 
+                        <p class='book-title'>Entertaining Race: Performing Blackness in America</p>
+                        <p class='book-price'>R$26,99</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+    
+                <div class='book-container'>
+                    <img src="images/book-7.png">
+                    <section class='book-info'> 
+                        <p class='book-title'>Three Sisters: A Novel</p>
+                        <p class='book-price'>R$18,42</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+
+                <div class='book-container'>
+                    <img src="images/book-8.png">
+                    <section class='book-info'> 
+                        <p class='book-title'>My Body (English Edition)</p>
+                        <p class='book-price'>R$148,76</p>
+                        <button>Comprar</button>
+                    </section>
+                </div>
+
                 <div class='book-container'>                    
                     <img src="images/book-1.png">                    
                     <section class='book-info'> 
@@ -168,7 +256,8 @@
             <path d="M50 3C24.0842 3 3 24.0842 3 50C3 75.9158 24.0842 97 50 97C75.9158 97 97 75.9158 97 50C97 24.0842 75.9158 3 50 3ZM73.5 54.7H54.7V73.5H45.3V54.7H26.5V45.3H45.3V26.5H54.7V45.3H73.5V54.7Z" fill="#F1EEDE"/>
         </svg>
 
-        <div id="sales">
+        <div id="sales"><!-- Essa <div> é desnecessária, os estilos dela podem ser embutidos na tag <p> criada abaixo.
+            Sempre que uma div é criada para manter um unico elemento, ela é desnecessária-->
             <p>Venda um livro!</p>
         </div>
     </section>
@@ -181,10 +270,10 @@
                 <img class="icons" alt="Instagram" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_28,h_28,al_c,q_85,usm_0.66_1.00_0.01/01c3aff52f2a4dffa526d7a9843d46ea.webp" style="margin-right: 8px;">
                 <img class="icons" alt="YouTube" src="https://static.wixstatic.com/media/78aa2057f0cb42fbbaffcbc36280a64a.png/v1/fill/w_28,h_28,al_c,q_85,usm_0.66_1.00_0.01/78aa2057f0cb42fbbaffcbc36280a64a.webp">
             </li>
-            <li>© 2023 por Centro Tech. Orgulhosamente criado com WIX.COM</li>
-            <li>Centro Tech - CNPJ: 12.345.678/0001-00</li>
+            <li>© 2021 por Mercado Livro</li>
+            <li>Mercado Livro - CNPJ: 12.345.678/0001-00</li>
             <li>Av. Bernardino de Campos, 98 - São Paulo SP 12345-678</li>
-            <li>Tel: (11) 3456-7890 | info@meusite.com </li>
+            <li>Tel: (11) 1234-0666 | info@meusite.com </li>
         </ul>
 
         <ul>

@@ -1,5 +1,13 @@
+/* 
+    É recomendado criar ao menos duas folhas de estilos para separar estilos gerais de estilos mais específicos.
+    set-style.css => para estilos padrões como as variáveis de estilos, estilos para body, button, input, etc. Tudo que for genérico
+    style.css => para estilos de elementos mais específicos definidos por id ou class
+*/
+
 :root{
     overflow-x: hidden;
+    /* A necessidade de overflow: hidden é comumente uma falha na estrutura da responsividade da aplicação 
+    Recomendo utilizar box-sizing: border-box */
 }
 
 body {
@@ -35,7 +43,9 @@ header{
                 height: 100%;
                 justify-content: space-between;
             }
-                #logo div{
+                /* Identação desnecessária tendo em vista que a hierarquia já 
+                    está explícita pela presença do elemento pai declarado antes */
+                #logo div{ 
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -55,10 +65,6 @@ header{
         header * * :hover {
             cursor: pointer;
         }
-
-    
-
-    #icons {}
 
 #search {
     display: flex;
@@ -80,6 +86,7 @@ header{
     #input-search {
         border: none;
         background: none;
+        width: 430px;
     }
 
     #input-search::placeholder {
@@ -239,6 +246,10 @@ main {
         left: 500px;
     }
 
+        #buttonsales,#sales:hover{
+            cursor: pointer;
+        }
+
     #sales p {
         font-family: Quicksand;
         font-style: normal;
@@ -278,7 +289,7 @@ main {
     }
     #products {
         width: 936px;
-        height: 1130px;
+        height: 2500px;
 
         display: flex;
         justify-content: space-evenly;
