@@ -89,11 +89,15 @@ header{
         color: black;
     }
 
-        #input-search:focus {
-            box-shadow: 0;
-            outline: 0;
-            font-family: Quicksand;
-        }
+    #input-search:focus {
+        box-shadow: 0;
+        outline: 0;
+        font-family: Quicksand;
+    }
+    
+    #input-search ~ svg {
+        cursor: pointer;
+    }
 
 main {
     display: flex;
@@ -166,36 +170,112 @@ main {
 
 
 
+    #salesspace {
+        position: fixed;
+        bottom: 30px;
+        left: 40px;
+        cursor: pointer;
+    }
+
     #buttonsales {
         position: fixed;
         bottom: 30px;
         left: 40px;
+        z-index: 1;
+        cursor: pointer;
     }
-
+    
     #sales {
-        display: none;
+        display: flex;
         position: fixed;
+        justify-content: right;
         bottom: 30px;
         left: 40px;
-        width: 230px;
         height: 100px;
+        width: 100px;
         background: #0C3D41;
-        border: 3px solid #ECD061;
         box-sizing: border-box;
-        border-radius: 15px;
+        border-radius: 50px;
+        border: 3px solid #ecd061;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 10px;
+        transition: ease-in-out 1s;
+        transition-duration: 0.9s;
+        transition-delay: 0.1s;
+    }
+    
+    #salesspace:hover #sales{
+        display: flex;
+        width: 400px;
+        border-radius: 50px 15px 15px 50px;
+        transition: ease-in-out;
+        transition-duration: 1s;
+        transition-delay: 0.1s;
+    }
+
+    #salesspace svg{
+        transform-origin: 50% 50%;
+        transform-style: flat;
+        transition: ease-in-out 1s;
+        transition-duration: 1s;
+        transition-delay: 0.1s;
+    }
+
+    #salesspace:hover svg{
+        transform-origin: 50% 50%;
+        transform-style: flat;
+        transform: rotate(720deg);
+        transition: ease-in-out 1s;
+        transition-duration: 1s;
+    }
+
+    #salesspace:hover svg circle{
+        animation: shine  1s;
+        fill: #0C3D41;
+    }
+
+    #salesspace:hover {
+        left: 500px;
     }
 
     #sales p {
         font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
+        text-align: right;
         font-size: 36px;
         line-height: 45px;
         align-self: center;
-        text-align: center;
         color: #ECD061;
+        animation: opac ease-in-out 1s;
     }
 
+    @keyframes shine {
+        0% {
+            fill: #5C7D65;
+        }
+
+        50% {
+            fill: #8fb897;
+        }
+
+        100% {
+            fill: #0C3D41;
+        }
+    }
+
+    @keyframes opac {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.8;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
     #products {
         width: 936px;
         height: 1130px;
